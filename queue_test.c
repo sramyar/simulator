@@ -35,6 +35,8 @@ char* testName(int test)
     case Dequeue_test:
         return "Dequeue_test";
     }
+
+    return "";
 }
 
 uint8_t runTest(Queue* q, int test)
