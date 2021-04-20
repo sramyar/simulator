@@ -7,17 +7,17 @@
 // Helper funcs for fetching parent and left/right child
 int parent(int i)
 {
-    return i/2;
+    return (i-1)/2;
 }
 
 int left(int i)
 {
-    return 2*i;
+    return 2*i+1;
 }
 
 int right(int i)
 {
-    return 2*i + 1;
+    return 2*i + 2;
 }
 
 // Helper for replacing A[i] and A[j] elements in an array
