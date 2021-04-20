@@ -69,13 +69,13 @@ void heapify(Heap* h, int i)
     int largest;
     int l = left(i);
     int r = right(i);
-    if (l <= h->size && h->array[l] > h->array[i]){
+    if (l < h->size && h->array[l] > h->array[i]){
         largest = l;
     }
     else{
         largest = i;
     }
-    if (r <= h->size && h->array[r] > h->array[largest]){
+    if (r < h->size && h->array[r] > h->array[largest]){
         largest = r;
     }
     if (largest != i){
