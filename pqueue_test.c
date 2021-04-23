@@ -141,7 +141,7 @@ void abrupt_termination_handler(int signal) { // program killed externally
 int main(int argc, char **argv)
 {
     if (argc > 2 || (argc == 2 && strcmp(argv[1], "-v") != 0)) {
-    printf("Usage: %s [-v]", (argc > 0 ? argv[0] : "./queue_test"));
+    printf("Usage: %s [-v]", (argc > 0 ? argv[0] : "./pqueue_test"));
     exit(1);
     }
 
